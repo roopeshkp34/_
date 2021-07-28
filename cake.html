@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!-- <![endif]-->
+
+<head>
+	<title>Happy Birthday</title>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Happy Birthday Xola">
+	<meta name="robots" content="index, follow" />
+	<link rel="author" href="https://plus.google.com/u/1/+AyushSharma1/" />
+	<meta name="keywords" content="Birthday, Happy">
+	<!-- Strat of Facebook Meta -->
+	<meta property="og:type" content="E-Greeting" />
+	<meta property="og:image" content="favicon.ico" />
+	<meta property="og:description" content="Wish you a very Happy Birthday">
+	<!-- End of Facebook Meta Tags -->
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style/stylesheet.css">
+	<link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'> -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+</head>
+
+<body>
+
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_yellow"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_red"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_blue"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_green"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_pink"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_orange"></div>
+			</div>
+			
+		</div>
+		<div class="row">
+			<div id="myDIV" class="col-md-12 col-xs-12 col-sm-12" style="display:none">
+				<h1>Make a wish,<br />and touch the flame..</h1>
+				<div class="glow" id="glow"></div>
+				<div id="candle">
+					<div class="stripe"></div>
+					<div class="stripe"></div>
+					<div class="stripe"></div>
+					<div class="stripe"></div>
+					<div class="stripe"></div>
+					<a href="blast.html"><div id="top">
+						
+						<div class="smoke"></div>
+						<div class="smoke"></div>
+						<div class="smoke"></div>
+						<div id="knot"></div>
+						<div class="burn" id="flame"></div>
+					</div></a>
+				</div>
+				<div class="cake ">
+					<img src="style/img/cake.png" alt="">
+				</div>
+			</div>
+
+		</div>
+
+		<div class="navbar navbar-fixed-bottom">
+			<div class="row">
+				<div class="col-md-6 text-center col-md-offset-3">
+					<button class="btn btn-primary" id="turn_on">Turn On Lights</button>
+					<button class="btn btn-primary" id="play" onclick="myFunction()">Hit Me</button>
+					
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("myDIV");
+		  var y = document.getElementById("play");
+		 
+		  if (x.style.display === "none") {
+			x.style.display = "block";
+		  }
+		  if (y.style.display!="none"){
+			  y.style="none"
+		  }
+		  
+		}
+		</script>
+	
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="script/effect.js"></script>
+<script src="script/cake.js"></script>
+
+
+</html>
